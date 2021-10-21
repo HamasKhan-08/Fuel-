@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int litre;
+    int total;
+    char fuel;
+    cout << " Kindly enter how many litres you would like " << endl;
+    cin >> litre;
+    cout << " You have selected " << litre << "litres" << endl;
+    cout << " Kindly select the type of fuel " << endl;
+    cin >> fuel;
+    switch (fuel)
+    case 'd':
+    case 'D':
+    {
+        cout << " You have selected Diesel " << endl;
+        total = litre*0.8;
+        cout << " The price per litre is 0.8 so your total is " << total << endl;
+        break;
+        {
+            case 'p':
+            case 'P':
+            cout << " You have selected petrol for your car " << endl;
+            total = litre*0.6;
+            cout << " The price per litre is 0.6 so your total is " << total << endl;
+            break;
+        }
+        default:
+        { 
+            cout << " incorrect command " << endl;
+        }
+    }}
